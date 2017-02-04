@@ -25,10 +25,14 @@ repositories {
 	mavenCentral()
 }
 
-
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
-	compile('org.springframework.boot:spring-boot-starter-jersey')
-	compile('org.springframework.boot:spring-boot-starter-web')
+//	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+//	compile('org.springframework.boot:spring-boot-starter-jersey')
+	compile('org.springframework.boot:spring-boot-starter')
+    compile 'com.google.api-client:google-api-client:1.22.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.22.0'
+    compile 'com.google.apis:google-api-services-sheets:v4-rev108-1.22.0'
+    compile 'org.projectlombok:lombok:1.16.12'
+	compile 'io.reactivex.rxjava2:rxjava:2.0.0'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

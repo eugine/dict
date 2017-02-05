@@ -1,8 +1,8 @@
 package com.eugenesokolov.dict.model;
 
-import lombok.Data;
+import lombok.Value;
 
-@Data
+@Value
 public class TranslationWord {
     private String source;
     private String translation;

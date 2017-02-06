@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-//	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 //	compile('org.springframework.boot:spring-boot-starter-jersey')
 	compile('org.springframework.boot:spring-boot-starter')
     compile 'com.google.api-client:google-api-client:1.22.0'

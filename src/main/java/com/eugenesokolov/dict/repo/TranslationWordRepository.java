@@ -8,5 +8,4 @@ import org.springframework.stereotype.Repository;
 public interface TranslationWordRepository extends CrudRepository<TranslationWord, String> {
 
     TranslationWord findFirstBySourceAndSourceLang(String source, String sourceLang);
-
 }

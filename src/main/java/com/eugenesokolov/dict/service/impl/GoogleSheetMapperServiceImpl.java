@@ -9,14 +9,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class GoogleSheetMapperServiceImpl implements GoogleSheetMapperService {
+class GoogleSheetMapperServiceImpl implements GoogleSheetMapperService {
 
     @Override
     public List<TranslationWord> mapResults(List<List<Object>> values) {
-        return values == null ? Collections.emptyList()
-                : values.stream().filter(item -> item.size() >= 4)
-                .map(GoogleSheetMapperServiceImpl::mapTranslationWord)
-                .collect(Collectors.toList());
+        return values == null
+                ? Collections.emptyList()
+                : values.stream()
+                    .filter(item -> item.size() >= 4)
+                    .map(GoogleSheetMapperServiceImpl::mapTranslationWord)
+                    .collect(Collectors.toList());
     }
 
     private static TranslationWord mapTranslationWord(List<Object> item) {
